@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corousal Example</title>
+    <link href="../Includes/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Includes/bootstrap-3.3.7/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <style>
+        body{
+            margin-top:50px;
+        }
+        .item{
+            height: 300px;
+        }
+        #social-media-menu{
+                list-style-type: none;
+                padding: 0;
+                overflow: auto;
+        }
+        #social-media-menu > li {
+                float: left;
+                width:20%;
+                text-align: center;
+        }
+        #social-media-menu > li > a{
+                font-size: 3em;
+                color: blue;
+                text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+   <nav class="navbar navbar-default" navbar-fixed-top>
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-target="#primary-menu" data-toggle="collapse">
+                    Menu
+                </button>
+                <div class="navbar-brand">
+                    <a href="index.html"> MyWebsite! </a> 
+                </div>
+            </div>    
+            <div class="collapse navbar-collapse" id="primary-menu">    
+                <ul class="nav navbar-nav">
+                    <li> <a href="googleMaps.html"> Google Maps </a></li>
+                    <li> <a href="googleChart.html"> Google Chart </a></li>
+                    <li> <a href="corousal.html"> Corousal </a></li>
+                    <li> <a href="lobster.html"> Lobster Fonts </a></li>
+                </ul>
+            </div> 
+        </div>
+    </nav>
+
+
+<div id="main-carousal" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#main-carousal" data-slide-to="0" class="active"></li>
+        <li data-target="#main-carousal" data-slide-to="1" class=""></li>
+        <li data-target="#main-carousal" data-slide-to="2" class=""></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item active">
+            <img  alt="First slide" src="images/four.jpg">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Just Learn It</h1>
+                    <p>Wanted to learn something new, just do it.</p>
+                    <p>
+                        <a class="btn btn-primary" href="#" role="button">Sign up</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img  alt="Second slide" src="images/five.jpg">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Just Learn It</h1>
+                    <p>Wanted to learn something new, just do it.</p>
+                    <p>
+                        <a class="btn btn-primary" href="#" role="button">Sign up</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img dalt="Third slide" src="images/six.jpg">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Just Learn It</h1>
+                    <p>Wanted to learn something new, just do it.</p>
+                    <p>
+                        <a class="btn btn-primary" href="#" role="button">Sign up</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#main-carousal" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+    <a class="right carousel-control" href="#main-carousal" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+</div>
+
+
+
+    </footer>
+    <script src="../Includes/jquery-3.2.1.min.js"></script>   
+    <script src="../Includes/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+
+    
+</body>
+</html>
